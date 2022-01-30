@@ -41,7 +41,7 @@ def modify_info(data):
     help="Display only the specified PID.",
 )
 def main(name, incl, pid):
-    from dockerpid.core import dockerpid
+    from dockertop.core import dockerpid
 
     data = dockerpid(name, incl, pid)
     headers = ["Container ID", "Container Name", "User", "PID", "%CPU", "%Mem", "CMD"]
