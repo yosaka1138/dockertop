@@ -11,6 +11,12 @@ Just clone this repository and pass it to your computer to use.
 git clone git@github.com:yosaka1138/dockertop.git
 export PATH="`pwd`/dockertop/bin:$PATH"
 ```
+or get binary
+
+```bash
+wget https://github.com/yosaka1138/dockertop/raw/main/bin/dockertop
+chmod 777 dockertop
+```
 
 ## Specified Container name
 ```bash
