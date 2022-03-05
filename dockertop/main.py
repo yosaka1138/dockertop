@@ -1,5 +1,6 @@
 import click
 from tabulate import tabulate
+from dockertop.__version__ import __version__
 
 
 def truncate(text, width=15, placeholder="..."):
@@ -19,6 +20,7 @@ def modify_info(data):
 
 
 @click.command()
+@click.version_option(__version__)
 @click.option(
     "-name",
     "--container_name",
